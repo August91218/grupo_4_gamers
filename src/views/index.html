@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/29653ac336.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css"> 
+    <link rel="stylesheet" href="/css/styles.css">  
+    <title>Home</title>
+</head>
+<body>
+    <header class="main-header">
+        <!-- Logo y botones-->
+    <div class="main-header-top-navbar">
+        <img class="logo" src="/images/logo.png" alt="logo">
+        <h1>Bienvenidos a  Gamers PC</h1>
+                <h4 class="barra-busqueda"><input  class="oculto" class="text"  value="Buscar..." ><button class="oculto"><i class="fa-solid fa-magnifying-glass"></i></button> </h4>
+
+                <!-- Boton de hamburguesa-->
+        <a href="#" class="hamburguer-button"> 
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <!-- Opciones-->
+    <nav class="main-navbar oculto">
+        <ul >
+            <li>
+                <a href="/login"><span>Ingresar </span><i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/carrito" class="nav-link">Carrito <i class="fa-solid fa-basket-shopping"></i></a>
+                </a>
+            </li>
+
+        </ul>
+        
+    </nav>
+    </header>
+    <!--barra de opciones -->
+    <header class="oculto">
+        <nav >
+            <a href="/Tienda" class="nav-link">Tienda</a>
+            <a href="" class="nav-link">Arma tu pc</a>
+            <a href="" class="nav-link">Ayuda</a>
+            <a href="" class="nav-link">Contactanos</a>
+        </nav>
+    </header>   
+    <main>
+<div class="main-destacados">
+    <button><i class="fa-solid fa-arrow-left"></i></button>
+    <img class="publicidad"src="/images/Captura.JPG" alt="">
+    <button><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+<!--Productos destacados-->
+<h2 class="copy-main-section-productos">Productos destacados</h2>
+<section class="main-section-producto">
+
+<div >
+    <img  class=" productos "   src="/images/video-geforce-rtx-4090-24gb-asus-rog-strix-gaming-oc-0.jpg" alt="">
+    <div >
+    <h4>Tarjeta de video-RTX 4090-Mod.Rog Strix Gaming </h4>
+    <a href=""><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</a>
+</div>
+    
+    <img  class=" productos " src="/images/830248-MLA44537046862_012021-F.jpg" alt="">
+<div>
+    <h4>Auriculares inalambricos-Marca Logitech-Mod. G735 </h4>
+    <a href=""><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</a>
+</div>
+    <img  class="productos " src="/images/concepto-10395829.jpg" alt="">
+<div >
+    <h4>Gabinete gamer-3 fans-Marca. PERFORMANCE</h4>
+    <a href=""><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito </a>
+</div>
+</div>
+</section>
+<!--Publicidad-->
+<section class="publicidad">
+    <img src="/images/Captura.JPG" alt="">
+</section>
+    </main>
+    <!--Footer-->
+    <footer class="main-footer">
+        <div >
+            <h3>Redes sociales</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+            <div >
+                <img  class="logo-footer" src="/images/logo.png" alt="logo">
+                <h4>Contactanos</h4>
+                <h4>3884502323</h2>
+                <h4>Correo:ventadecomponentes@gmail.com</h3>
+            </div>
+            <div class="oculto2">
+                <h3>¿Queres recibir las mejores ofertas?</h3>
+                <h3>correo electronico</h3>
+                <input type="email" value="">
+                <div class="button-footer">
+                <button>Suscribite</button>
+                </div>
+            </div>
+            
+    </footer>
+    <script>
+        function agregarAlCarrito(nombre, precio) {
+            const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito.push({ nombre, precio });
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert(`${nombre} agregado al carrito. Precio: $${precio}`);
+        }
+    </script>
+    <script src="/app.js"></script>
+</body>
+</html>

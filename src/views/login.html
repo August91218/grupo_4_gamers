@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <header>
+        <div>Logo</div>
+        <form action="#">
+            <input type="text" name="search-bar" id="search-bar" placeholder="Buscar productos, ofertas, promociones...">
+            <button type="submit" id="buscar">-</button>
+        </form>
+        <ul type="none">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Carrito</a></li>
+        </ul>
+    </header>
+    <section>
+        <div id="b-div">
+            <i class="fas fa-user"></i> 
+            <span id="bienvenida">¡Te damos la bienvenida!</span>
+        </div>
+        <article>
+            <div class="login-box">
+                <h1 id="login-title">Iniciá Sesion</h1>
+                <form action="#" method="post" id="login-form">
+                    <div id="no-acc"><span class="no-acc-reg">¿No tenés una cuenta? <a href="/register" class="no-acc-reg"><strong>Registrate</strong></a></span></div>
+                    <div id="inputs-container">
+                        <input type="text" name="usuario" id="usuario" class="input" placeholder="Usuario">
+                        <input type="password" name="password" id="password" class="input" placeholder="Contraseña">
+                    </div>
+                    <div id="submit-box">
+                        <button type="submit" id="submit">
+                            <span>Iniciar Sesion</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <a href="/" id="forgotten-pass">Olvidé mi contraseña</a>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

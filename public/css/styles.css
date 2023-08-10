@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #141c29;
+
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(140, 140, 140);
+}
+
+.logo{
+    display: flex;
+    
+}
+.logo img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.main-header-top-navbar{
+    text-align: center;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+.oculto{
+    display: none;
+}
+.main-header{
+background-color: grey;
+padding: 20px;
+display: block;
+
+}
+.logo{
+    width: 8rem;
+    
+}
+.main-destacados{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.publicidad{
+    width: 80vw;
+}
+
+.hamburguer-button{
+    background-color: rgb(71, 2, 71);
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+.main-navbar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.main-navbar a { 
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.copy-main-section-productos{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    margin: 5px;
+}
+.main-section-producto{
+    display: block;
+}
+
+
+img{
+    width: 70vw;
+}
+.container-producto{
+
+    padding: 10px;
+
+}
+.main-footer{
+    background-color:grey ;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+.main-footer div {
+    text-align:center
+}
+.main-footer div i {
+    font-size: 30px;
+}
+.copy-main-section-productos{
+    background-color:rgb(71, 2, 71); ;
+    padding: 3px;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+}
+.main-conteiner-productos{
+    display: flex;
+    flex-direction: column;
+}
+.container-producto{
+    display: block;
+    text-align: center;
+    background-color: rgb(71, 2, 71);;
+    padding: 10px ;
+    margin: 5px;
+}
+.container-producto h4{
+color: white;
+
+}
+.publicidad{
+    display: flex;
+    padding: 10px;
+    width: 80vw;
+    justify-content: center;
+    text-align: center;
+
+}
+.logo-footer{
+    width: 30%;
+}
+h1,h2{
+    color: white;
+    
+}
+.oculto2{
+    display: none;
+}
+.main-section-producto{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    
+}
+.main-section-producto div{
+    box-shadow: 0px 0px 5px 0px rgba(0,0, 0,0);
+    background-color: #132b51d7;
+    padding: 0;
+    margin: 10px;
+    border-radius: 20px;
+}
+/*Media tablet */
+@media (min-width:576px){
+.oculto{
+    display: flex;
+    
+}
+.main-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+.barra-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    display: none;
+}
+
+.main-header-top-navbar{
+    display: flex;
+    justify-content: space-around;
+
+}
+header {
+    display: none;
+}
+.hamburguer-button{
+    display: none;
+}
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(71, 2, 71);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+}
+
+@media (min-width:768px){
+.hamburguer-button{
+    display: none;
+}    
+.main-header-top-navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+.barra-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-header{
+    font-size: 25px;
+    text-align: left;
+    
+}
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.main-navbar ul{
+    display: flex;
+}
+.main-navbvar{
+    margin: 0 5px;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+/*media desketop */
+@media (min-width:1200px){
+    .oculto2{
+        display: flex;
+    }
+    .main-navbar,.main-header-top-navbar{
+        max-width: 1200px;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 3rem;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .main-navbar li {
+    margin: 0 5px;
+    }
+    .main-navbar a{
+        font-size: 18px;
+    }
+    header {
+        display: flex;
+        min-height: 70px;
+        background-color: rgb(71, 2, 71);
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .main-conteiner-productos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main-footer div{
+        flex-direction: column;
+    }
+    .main-footer{
+        justify-content: center;
+        flex-direction: row;
+        padding: 10px;
+        align-items: center;
+    }
+.button-footer{
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+}
+}  
