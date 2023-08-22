@@ -1,30 +1,23 @@
 let express=require("express");
 let app=express();
 let path=require("path");
+
+const mainRouter = require('./routes/mainRouter.js');
+
 app.listen("3000", function () {
     console.log("Servidor corriendo")
 });
 app.use(express.static("public"))
-app.get("/",function (req,res) {
 
-    res.sendFile(path.join(__dirname,"/views/index.html"))
-})
-app.get("/login",function (req,res) {
+app.set('view engine', 'ejs');
+app.set('views', './src/views')
 
-    res.sendFile(path.join(__dirname,"/views/login.html"))
-})
-app.get("/register",function (req,res) {
+app.get("/", mainRouter);
+app.get("/login", mainRouter);
+app.get("/register", mainRouter);
+app.get("/Tienda", mainRouter);
+app.get("/carrito", mainRouter);
 
-    res.sendFile(path.join(__dirname,"/views/register.html"))
-})
-app.get("/carrito",function (req,res) {
-
-    res.sendFile(path.join(__dirname,"/views/carrito.html"))
-})
-app.get("/tienda",function (req,res) {
-
-    res.sendFile(path.join(__dirname,"/views/Tienda.html"))
-})
 
 
 //Para la funcion de tienda y carrito donde los productos comprados se manden al carrito donde podran ser vistos//

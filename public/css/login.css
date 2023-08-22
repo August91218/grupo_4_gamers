@@ -7,44 +7,18 @@ body{
     border: none;
     background-color: rgba(214, 212, 212, 0.938);
 }
-header{
-    background-color: rgb(155, 155, 155);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-/*-----------------Barra de navegacion-----------------------*/
-#search-bar{
-    width: 550px;
-    padding: 5px;
-    border: solid 1px white;
-    border-radius: 7px;
-}
 
-#buscar{
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    border: none;
-    border-radius: 7px;
-    background-color: rgb(231, 231, 228);
-    cursor: pointer;
-}
 /*-----------------botones de navegacion-----------------*/
-ul{
+nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-ul li a{
+nav a{
     text-decoration: none;
-    color: black;
+    color: rgb(189, 184, 184);
     margin: 10px;
-}
-ul li a:hover{
-    text-decoration: underline;
 }
 
 /*-------------------Formulario de Login-----------------------*/

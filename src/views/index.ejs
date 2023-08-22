@@ -6,45 +6,11 @@
     <script src="https://kit.fontawesome.com/29653ac336.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css"> 
     <link rel="stylesheet" href="/css/styles.css">  
+    <link rel="stylesheet" href="/css/header.css">  
     <title>Home</title>
 </head>
 <body>
-    <header class="main-header">
-        <!-- Logo y botones-->
-    <div class="main-header-top-navbar">
-        <img class="logo" src="/images/logo.png" alt="logo">
-        <h1>Bienvenidos a  Gamers PC</h1>
-                <h4 class="barra-busqueda"><input  class="oculto" class="text"  value="Buscar..." ><button class="oculto"><i class="fa-solid fa-magnifying-glass"></i></button> </h4>
-
-                <!-- Boton de hamburguesa-->
-        <a href="#" class="hamburguer-button"> 
-            <i class="fa-solid fa-bars"></i>
-        </a>
-        <!-- Opciones-->
-    <nav class="main-navbar oculto">
-        <ul >
-            <li>
-                <a href="/login"><span>Ingresar </span><i class="fa-solid fa-user"></i>
-                </a>
-            </li>
-            <li>
-                <a href="/carrito" class="nav-link">Carrito <i class="fa-solid fa-basket-shopping"></i></a>
-                </a>
-            </li>
-
-        </ul>
-        
-    </nav>
-    </header>
-    <!--barra de opciones -->
-    <header class="oculto">
-        <nav >
-            <a href="/Tienda" class="nav-link">Tienda</a>
-            <a href="" class="nav-link">Arma tu pc</a>
-            <a href="" class="nav-link">Ayuda</a>
-            <a href="" class="nav-link">Contactanos</a>
-        </nav>
-    </header>   
+    <%- include('./partials/header')%>
     <main>
 <div class="main-destacados">
     <button><i class="fa-solid fa-arrow-left"></i></button>

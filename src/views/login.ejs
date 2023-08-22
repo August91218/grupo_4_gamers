@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/header.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,18 +12,7 @@ rel="stylesheet" />
     <title>Iniciar Sesion</title>
 </head>
 <body>
-    <header>
-        <div>Logo</div>
-        <form action="#">
-            <input type="text" name="search-bar" id="search-bar" placeholder="Buscar productos, ofertas, promociones...">
-            <button type="submit" id="buscar">-</button>
-        </form>
-        <ul type="none">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Carrito</a></li>
-        </ul>
-    </header>
+    <%- include('./partials/header')%>
     <section>
         <div id="b-div">
             <i class="fas fa-user"></i> 

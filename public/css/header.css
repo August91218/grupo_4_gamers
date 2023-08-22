@@ -1,0 +1,33 @@
+#logo{
+    width: 70px;
+    height: 70px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/*-----------------Barra de navegacion-----------------------*/
+#busqueda-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#search-bar{
+    width: 550px;
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 7px;
+}
+
+#buscar{
+    height: 30px;
+    padding: 8px;
+    border: none;
+    margin: 5px;
+    border-radius: 7px;
+    background-color: rgb(231, 231, 228);
+    cursor: pointer;
+}
