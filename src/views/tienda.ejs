@@ -19,70 +19,16 @@
 </nav>
 <main>
     <div id="contenedor" class="contenedor">
-        <div>
-            <img src="/images/LG 27GQ50F-B monitor gaming ultragear 17.jpg" alt="Producto">
-            <div class="informacion">
-                <p>Monitor LG Ultragear</p>
-                <p class="precio">$199<span>.99</span></p>
-                <button onclick="agregarAlCarrito('Producto 1', 199.99)">Comprar</button>
+        <% products.forEach(products => { %>
+            <div>
+                <img src= "./images/<%= products.image %>" alt="Producto">
+                <div class="informacion">
+                    <p><%= products.name %></p>
+                    <p class="precio"><%= products.price %></p>
+                    <button onclick="agregarAlCarrito('Producto 1', 199.99)">Comprar</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <img src="/images/Samsung Odyssey G7.jpg" alt="producto 2">
-            <div class="informacion">
-                <p>Samsung Odyssey G7</p>                   
-                <p class="precio">$299<span>.99</span></p>
-                <button onclick="agregarAlCarrito('Producto 2', 299.99)">Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/images/Samsung-Odyssey-Ark-Monitor-Gamer-Oficial.webp" alt="Producto 3">
-            <div class="informacion">
-                <p>Samsung Odyssey Ark</p>                   
-                <p class="precio">$399<span>.99</span></p>
-                <button onclick="agregarAlCarrito('Producto 3', 399.99)">Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/images/Lian Li Lancool 215X RGB (2 Coolers ARGB (200mm) + 1 Cooler).webp" alt='Producto 4'>
-            <div class="informacion">
-                <p>Gabinete Lancool + 3 Coolers</p>                   
-                <p class="precio">$499<span>.99</span></p>
-                <button onclick="agregarAlCarrito('Producto 4', 499.99)">Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/images/Mouse Gamer Redragon M908 Impact.jpg" alt="producto 5">
-            <div class="informacion">
-                <p>Mouse Redragon M908</p>                   
-                <p class="precio">$159<span>.99</span></p>
-                <button onclick="agregarAlCarrito('Producto 5', 159.99)">Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/images/Mouse Gamer Redragon Vampire RGB 8 Botões 10000 DPI.webp" alt="producto 6">
-            <div class="informacion">
-                <p>Mouse Redragon Vampire</p>                   
-                <p class="precio">$699<span>.99</span></p>
-                <button onclick="agregarAlCarrito('Producto 6', 699.99)">Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/images/thermaltake-ah-t200.jpg" alt="producto 7">
-            <div class="informacion">
-                <p>Gabinete Thermaltake T200</p>                   
-                <p class="precio">$799<span>.99</span></p>
-                <button onclick="agregarAlCarrito('Producto 7', 799.99)">Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/images/Gabinete Corsair 460X Mid-Tower Blanco RGB.jpg" alt="producto 8">
-            <div class="informacion">
-                <p>Gabinete 460X</p>                   
-                <p class="precio">$899<span>.99</span></p>
-                <button onclick="agregarAlCarrito('Producto 8', 899.99)">Comprar</button>
-            </div>
-        </div>
+        <% }) %>
     </div>
     <script>
         function agregarAlCarrito(nombre, precio) {

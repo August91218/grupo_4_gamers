@@ -1,0 +1,66 @@
+[
+    {
+        "id": "0",
+        "name": "Monitor LG Ultragear",
+        "description": "",
+        "image": "LG 27GQ50F-B monitor gaming ultragear 17.jpg",
+        "price": 199.99,
+        "category": "tienda"     
+    },
+    {
+        "id": "1",
+        "name": "Samsung Odyssey G7",
+        "description": "",
+        "image": "Samsung Odyssey G7.jpg",
+        "price": 299.99,
+        "category": "tienda"     
+    },
+    {
+        "id": "2",
+        "name": "Samsung Odyssey Ark",
+        "description": "",
+        "image": "Samsung-Odyssey-Ark-Monitor-Gamer-Oficial.webp",
+        "price": 399.99,
+        "category": "tienda"     
+    },
+    {
+        "id": "3",
+        "name": "Gabinete Lancool + 3 Coolers",
+        "description": "",
+        "image": "Lian Li Lancool 215X RGB (2 Coolers ARGB (200mm) + 1 Cooler).webp",
+        "price": 499.99,
+        "category": "tienda"   
+    },
+    {
+        "id": "4",
+        "name": "Mouse Redragon M908",
+        "description": "",
+        "image": "Mouse Gamer Redragon M908 Impact.jpg",
+        "price": 159.99,
+        "category": "tienda"   
+    },
+    {
+        "id": "5",
+        "name": "Mouse Redragon Vampire",
+        "description": "",
+        "image": "Mouse Gamer Redragon Vampire RGB 8 Botões 10000 DPI.webp",
+        "price": 699.99,
+        "category": "tienda"   
+    },
+    {
+        "id": "6",
+        "name": "Gabinete Thermaltake T200",
+        "description": "",
+        "image": "thermaltake-ah-t200.jpg",
+        "price": 799.99,
+        "category": "tienda"   
+    },
+    {
+        "id": "7",
+        "name": "Gabinete 460X",
+        "description": "",
+        "image": "Gabinete Corsair 460X Mid-Tower Blanco RGB.jpg",
+        "price": 899.99,
+        "category": "tienda"   
+    }
+]

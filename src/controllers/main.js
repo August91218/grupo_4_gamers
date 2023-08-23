@@ -1,4 +1,7 @@
 const path = require('path');
+const fs = require('fs');
+
+const jsonProducts = path.join(__dirname, '../data/products.json');
 
 const controlador = {
     carrito: (req,res) =>{
@@ -11,7 +14,8 @@ const controlador = {
         res.render('login');
     },
     tienda: (req,res) => {
-        res.render('tienda');
+        const products = JSON.parse(fs.readFileSync(jsonProducts));
+        res.render('tienda', {products});
     },
     register: (req,res) => {
         res.render('register');
