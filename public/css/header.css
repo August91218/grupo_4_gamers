@@ -4,16 +4,27 @@
 }
 header{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(71 2 71);
+}
+#morado{
+    background-color: rgb(59, 0, 59);
+    height: 30px;
+    width: 99.1vw;
+}
+.nav-link:hover{
+    color: rgb(188, 117, 255);
+    scale: 120%;
+    transition: 0.2s;
 }
 /*-----------------Barra de navegacion-----------------------*/
 #busqueda-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 #search-bar{
     width: 550px;

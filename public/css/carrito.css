@@ -1,6 +1,8 @@
+@import url(footer.css);
+
 body{
     font-family: "Space Grotesk", sans-serif;
-    background-color: #141c29;
+    background-color: rgba(214, 212, 212, 0.938);
     margin: 0;
 }
 a{
@@ -35,7 +37,7 @@ nav a:hover{
 
 
 *{
-    font-family: "Space Grotesk", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -149,19 +151,7 @@ padding: 0;
 .container-producto{
     padding: 10px;
     }
-.main-footer{
-    background-color:grey ;
-    display: inline-block;
-    padding: 10px 10px;
-    margin: 5px;
     
-    }
-    .main-footer div {
-        text-align:center
-    }
-    .main-footer div i {
-        font-size: 30px;
-    }
     @media (min-width:576px){
 .oculto{
     display: flex;

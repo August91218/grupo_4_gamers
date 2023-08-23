@@ -1,6 +1,9 @@
+@import url(header.css);
+
 *{
     font-family: 'Quicksand', sans-serif;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -58,7 +61,7 @@ article{
 #login-title{
     position: absolute;
     top: 15px;
-    left: 42px;
+    left: 43px;
 }
 label{
     margin: 4px;

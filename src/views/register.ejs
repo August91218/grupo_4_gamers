@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style_registro.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-    <a href="#" class="logo">
-    <img src="/images/logo.png" alt="logo de la compañia">
-    <h2 class="nombre de la empresa">Gamers</h2>
-
-    </a>
-    <nav>
-        <a href="/" class="nav-link">Inicio</a>
-        <a href="/Tienda" class="nav-link">Tienda</a>
-        <a href="/carrito" class="nav-link">Carrito</a>
-    </nav>
-</header>
+    <%- include('./partials/header')%>
     <main>
-        <div class="h2">
-            <h2>Registrese</h2>
-            <h5>Ingrese sus datos</h5>
-        </div>  
-        <div class="form"><form action="register.html" method="post"><input type="text"></form>  <form action="register.html" method="post"><input type="text"></form></div>
-        <div class="email"><form action="register.html" method="post"><input type="email"></div>
-        <div class="number"><form action="register.html" method="post"><input type="tel"></div>
-        <div class="password"><form action="register.html" method="post"><input type="password"><form action="register.html" method="post"><input type="password"></div>
-        <div class="submit"><button>Registrarse</button></div>
-        <div class="text">
-            ¿Ya tienes una cuenta? inicia sesion acá
-        </div>
+        <section>
+            <div id="b-div">
+                <i class="fas fa-user"></i> 
+                <span id="bienvenida">¡Te damos la bienvenida!</span>
+            </div>
+            <article>
+            <div class="register-box">
+                <h1 id="register-title">Registrate</h1>
+                <form action="#" method="post" id="register-form">
+                    <div id="no-acc"><span class="no-acc-reg">¿Ya tenés una cuenta? <a href="/login" class="no-acc-reg"><strong>Inicia Sesion</strong></a></span></div>
+                    <div id="inputs-container">
+                        <input type="text" name="name" id="usuario" class="input" placeholder="Nombre y Apellido">
+                        <input type="email" name="emial" id="email" class="input" placeholder="Correo Electrónico">
+                    </div>
+                    <div id="inputs-container-2">
+                        <input type="password" name="password" id="domicilio" class="input" placeholder="Domicilio">
+                        <input type="password" name="password-repeat" id="password" class="input" placeholder="Contraseña">
+                    </div>
+                    <div id="submit-box">
+                        <button type="submit" id="submit">
+                            <span>Registrarse</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </article>
+        </section>
     </main>
 </body>
 </html>

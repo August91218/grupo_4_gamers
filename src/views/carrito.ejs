@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,70 +8,54 @@
     <link rel="stylesheet" href="/css/header.css" class="css">
     <title>Carrito de Compras</title>
 </head>
+
 <body>
     <%- include('./partials/header')%>
-    <main><h1>Carrito de compras</h1>
+        <main>
+            <h1>Carrito de compras</h1>
 
-    <div>
-        <h2>Productos en el carrito</h2>
-        <ul id="carrito">
-            <!-- Aquí se mostrarán los productos agregados al carrito -->
-        </ul>
-        <p>Total: $<span id="total">0</span></p>
-        <button class="Vaciarc"  onclick="vaciarCarrito()">Vaciar carrito</button>
-        <button class="Comprarc" onclick="realizarCompra()">Comprar</button>
-    </div></main>
-    <script src="/app.js"></script>
-    <script>
-        function mostrarProductosEnCarrito() {
-    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    let total = 0;
-    const carritoElement = document.getElementById('carrito');
-    carritoElement.innerHTML = '';
-    carrito.forEach(item => {
-        const li = document.createElement('li');
-        li.innerText = `${item.nombre} - Precio: $${item.precio}`;
-        carritoElement.appendChild(li);
-        total += item.precio;
-    });
-    const totalElement = document.getElementById('total');
-    totalElement.innerText = total;
-}
-
-function vaciarCarrito() {
-    localStorage.removeItem('carrito');
-    mostrarProductosEnCarrito();
-}
-
-function realizarCompra() {
-    // Aquí podrías implementar la lógica para enviar la información del carrito al servidor,
-    // procesar el pago y generar una orden de compra.
-    alert("¡Compra realizada! Gracias por tu compra.");
-    vaciarCarrito();
-}
-
-mostrarProductosEnCarrito();
-    </script>
-    <footer class="main-footer">
-        <div class="conteiner-footer">
-            <h3>Redes sociales</h3>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-        </div>
-            <div class="conteiner-footer">
-                <img class="logo" src="/images/logo.png" alt="logo">
-                <h4>Contactanos</h4>
-                <h4>3884502323</h2>
-                <h4>Correo:ventadecomponentes@gmail.com</h3>
+            <div>
+                <h2>Productos en el carrito</h2>
+                <ul id="carrito">
+                    <!-- Aquí se mostrarán los productos agregados al carrito -->
+                </ul>
+                <p>Total: $<span id="total">0</span></p>
+                <button class="Vaciarc" onclick="vaciarCarrito()">Vaciar carrito</button>
+                <button class="Comprarc" onclick="realizarCompra()">Comprar</button>
             </div>
-            <div class="conteiner-footer">
-                <h3>¿Queres recibir las mejores ofertas?</h3>
-                <h3>correo electronico</h3>
-                <input class="email" type="email" value="">
-                <button>Suscribite</button>
-            </div>
-            
-    </footer>
+        </main>
+        <%- include('./partials/footer') %>
+            <script src="/app.js"></script>
+            <script>
+                function mostrarProductosEnCarrito() {
+                    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                    let total = 0;
+                    const carritoElement = document.getElementById('carrito');
+                    carritoElement.innerHTML = '';
+                    carrito.forEach(item => {
+                        const li = document.createElement('li');
+                        li.innerText = `${item.nombre} - Precio: $${item.precio}`;
+                        carritoElement.appendChild(li);
+                        total += item.precio;
+                    });
+                    const totalElement = document.getElementById('total');
+                    totalElement.innerText = total;
+                }
+
+                function vaciarCarrito() {
+                    localStorage.removeItem('carrito');
+                    mostrarProductosEnCarrito();
+                }
+
+                function realizarCompra() {
+                    // Aquí podrías implementar la lógica para enviar la información del carrito al servidor,
+                    // procesar el pago y generar una orden de compra.
+                    alert("¡Compra realizada! Gracias por tu compra.");
+                    vaciarCarrito();
+                }
+
+                mostrarProductosEnCarrito();
+            </script>
 </body>
+
 </html>
