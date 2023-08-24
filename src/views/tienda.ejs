@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/29653ac336.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/tienda.css" class="css">
     <link rel="stylesheet" href="/css/header.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -25,7 +26,7 @@
                 <div class="informacion">
                     <p><%= products.name %></p>
                     <p class="precio"><%= products.price %></p>
-                    <button onclick="agregarAlCarrito('Producto 1', 199.99)">Comprar</button>
+                    <button><a href="/tienda/detail">Comprar</a></button><!-- onclick="agregarAlCarrito('Producto 1', 199.99)" -->
                 </div>
             </div>
         <% }) %>

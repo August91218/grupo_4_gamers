@@ -3,6 +3,7 @@ let app=express();
 let path=require("path");
 
 const mainRouter = require('./routes/mainRouter.js');
+const productsRouter = require('./routes/productsRouter.js');
 
 app.listen("3000", function () {
     console.log("Servidor corriendo")
@@ -15,7 +16,7 @@ app.set('views', './src/views')
 app.get("/", mainRouter);
 app.get("/login", mainRouter);
 app.get("/register", mainRouter);
-app.get("/Tienda", mainRouter);
+app.get("/tienda", productsRouter);
 app.get("/carrito", mainRouter);
 
 
