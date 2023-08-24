@@ -13,11 +13,13 @@ app.use(express.static("public"))
 app.set('view engine', 'ejs');
 app.set('views', './src/views')
 
-app.get("/", mainRouter);
-app.get("/login", mainRouter);
-app.get("/register", mainRouter);
-app.get("/tienda", productsRouter);
-app.get("/carrito", mainRouter);
+app.get('/', mainRouter);
+
+app.get('/tienda', productsRouter);
+
+app.get('/login', mainRouter);
+app.get('/register', mainRouter);
+app.get('/carrito', mainRouter);
 
 
 
