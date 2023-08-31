@@ -16,6 +16,7 @@ app.set('views', './src/views')
 app.get('/', mainRouter);
 
 app.get('/tienda', productsRouter);
+app.get('/tienda/detail/:id', productsRouter);
 
 app.get('/login', mainRouter);
 app.get('/register', mainRouter);

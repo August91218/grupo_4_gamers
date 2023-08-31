@@ -7,11 +7,7 @@ body{
     background-color: rgba(214, 212, 212, 0.938);
     margin: 0;
 }
-nav a{
-    text-decoration: none;
-    color: rgb(189, 184, 184);
-    margin: 10px;
-}
+
 
 
 /*--------------------Register Form */

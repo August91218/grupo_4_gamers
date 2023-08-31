@@ -14,10 +14,13 @@ header{
     height: 30px;
     width: 100vw;
 }
+.nav-link{
+    text-decoration: none;
+    color: darkgray;
+    padding: 10px;
+}
 .nav-link:hover{
     color: rgb(188, 117, 255);
-    scale: 120%;
-    transition: 0.2s;
 }
 /*-----------------Barra de navegacion-----------------------*/
 #busqueda-container{

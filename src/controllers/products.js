@@ -9,7 +9,11 @@ const controlador = {
         res.render('tienda', {products});
     },
     detail: (req, res) => {
-        res.render('productDetail');
+        const products = JSON.parse(fs.readFileSync(jsonProducts));
+        const product = products.find(products => {
+            return products.id == req.params.id
+        });
+        res.render('productDetail', {product});
     }
 }
 module.exports = controlador;

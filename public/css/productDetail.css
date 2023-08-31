@@ -1,0 +1,12 @@
+@import url(header.css);
+@import url(footer.css);
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: rgba(214, 212, 212, 0.938);
+    margin: 0;
+    color: rgb(236, 236, 236);
+}
