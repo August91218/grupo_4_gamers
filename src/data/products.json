@@ -2,7 +2,7 @@
     {
         "id": "0",
         "name": "Monitor LG Ultragear",
-        "description": "Monitor Full-HD, 1920 x 1080, tecnología de panel VA",
+        "preview": "Monitor Full-HD, 1920 x 1080, tecnología de panel VA",
         "image": "LG 27GQ50F-B monitor gaming ultragear 17.jpg",
         "price": 299.99,
         "category": "tienda"     
@@ -10,7 +10,7 @@
     {
         "id": "1",
         "name": "Samsung Odyssey G7",
-        "description": "Alta resolución, curvo, panel IPS",
+        "preview": "Alta resolución, curvo, panel IPS",
         "image": "Samsung Odyssey G7.jpg",
         "price": 499.99,
         "category": "tienda"     
@@ -18,7 +18,7 @@
     {
         "id": "2",
         "name": "Samsung Odyssey Ark",
-        "description": "Curvo, 4K, con tecnologia de alta gama",
+        "preview": "Curvo, 4K, con tecnologia de alta gama",
         "image": "Samsung-Odyssey-Ark-Monitor-Gamer-Oficial.webp",
         "price": 699.99,
         "category": "tienda"     
@@ -26,7 +26,7 @@
     {
         "id": "3",
         "name": "Gabinete Lancool",
-        "description": "Perfecto para gama media, soporta placas ATX",
+        "preview": "Perfecto para gama media, soporta placas ATX",
         "image": "Lian Li Lancool 215X RGB (2 Coolers ARGB (200mm) + 1 Cooler).webp",
         "price": 199.99,
         "category": "tienda"   
@@ -34,7 +34,7 @@
     {
         "id": "4",
         "name": "Mouse Redragon M908",
-        "description": "12400 DPI, 18 botones, ideal para juegos MOBA ",
+        "preview": "12400 DPI, 18 botones, ideal para juegos MOBA ",
         "image": "Mouse Gamer Redragon M908 Impact.jpg",
         "price": 259.99,
         "category": "tienda"   
@@ -42,7 +42,7 @@
     {
         "id": "5",
         "name": "Mouse Redragon Vampire",
-        "description": "Óptico, hasta 10000 DPi, ideal para juegos shooter",
+        "preview": "Óptico, hasta 10000 DPi, ideal para juegos shooter",
         "image": "Mouse Gamer Redragon Vampire RGB 8 Botões 10000 DPI.webp",
         "price": 599.99,
         "category": "tienda"   
@@ -50,7 +50,7 @@
     {
         "id": "6",
         "name": "Gabinete Thermaltake T200",
-        "description": "Soporte ATX y micro-ATX, perfecto para dispositivos gama alta",
+        "preview": "Soporte ATX y micro-ATX, perfecto para dispositivos gama alta",
         "image": "thermaltake-ah-t200.jpg",
         "price": 699.99,
         "category": "tienda"   
@@ -58,7 +58,7 @@
     {
         "id": "7",
         "name": "Gabinete 460X",
-        "description": "Soporte ATX, excelente eleccion para dispositivos de gama alta",
+        "preview": "Soporte ATX, excelente eleccion para dispositivos de gama alta",
         "image": "Gabinete Corsair 460X Mid-Tower Blanco RGB.jpg",
         "price": 799.99,
         "category": "tienda"   

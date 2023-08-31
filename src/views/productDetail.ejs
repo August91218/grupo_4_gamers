@@ -15,8 +15,25 @@
 
 <body>
     <%- include('./partials/header') %>
-    
-    <%- include('./partials/footer') %>
+        <main>
+            <section>
+                <div class="detail-container">
+                    <article class="product-preview">
+                        <div id="image-container">
+                            <img src="/images/<%= product.image %>" alt="" id="product-image">
+                        </div>
+                    </article>
+                    <article class="product-info">
+                        <h2 id="product-name">Nombre del producto: <%= product.name %>
+                        </h2>
+                        <span class="product-description">
+                            <%= product.preview %>
+                        </span>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <%- include('./partials/footer') %>
 </body>
 
 </html>
