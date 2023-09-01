@@ -26,9 +26,25 @@
                     <article class="product-info">
                         <h2 id="product-name">Nombre del producto: <%= product.name %>
                         </h2>
-                        <span class="product-description">
-                            <%= product.preview %>
+                        <br>
+                        <span class="product-price">
+                            $<%= product.price %>
                         </span>
+                        <br>
+                        <span class="product-description">
+                            <%= product.description %>
+                        </span>
+                        <br>
+
+                        <div class="buttons-container">
+                            <div>
+                                <button id="buy-button">Comprar</button>
+                            </div>
+                            <div class="admin-buttons">
+                                <button id="edit-button">Editar Producto</button>
+                                <button id="delete-button">Eliminar Producto</button>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </section>

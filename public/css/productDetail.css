@@ -21,7 +21,7 @@ section{
 
 .detail-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     background-color: white;
@@ -51,7 +51,7 @@ section{
     width: 320px;
     height: 340px;
     position: relative;
-    right: 35px;
+    right: 15px;
 }
 
 #product-image{
@@ -61,5 +61,58 @@ section{
     border-radius: 45px;
 }
 .product-description{
-    margin: 10px;
+    max-width: 500px;
+    color: rgb(134, 134, 134);
+}
+.product-price{
+    color: rgb(66, 133, 0);
+}
+
+/*----------------Estilizaciones de botones de comprar, editar y eliminar----------------*/
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buy-button{
+    border: none;
+    height: 40px;
+    width: 500px;
+    cursor: pointer;
+    background-color: rgb(7, 135, 255);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.admin-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+}
+#edit-button{
+    border: none;
+    height: 40px;
+    width: 240px;
+    cursor: pointer;
+    background-color: rgb(255, 189, 7);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#delete-button{
+    border: none;
+    height: 40px;
+    width: 240px;
+    cursor: pointer;
+    background-color: rgb(255, 7, 7);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
 }
