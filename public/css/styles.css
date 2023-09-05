@@ -29,7 +29,6 @@ a{
     text-align: center;
 }
 nav a{
-    font-weight: 600;
     padding-right: 10px;
 }
 nav a:hover{
@@ -56,8 +55,7 @@ display: block;
     padding: 10px;
 }
 .publicidad{
-    width: 100vw;
-    height: 620px;
+    
 }
 
 .hamburguer-button{
