@@ -44,7 +44,7 @@ section{
 #product-name{
     color: black;
     margin: 0px;
-    
+    margin-top: 20px;
 }
 
 #image-container{
@@ -89,11 +89,18 @@ section{
     margin-bottom: 5px;
 }
 
+#edit-a-button{
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 .admin-buttons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 500px;
+    margin-bottom: 20px;
 }
 #edit-button{
     border: none;

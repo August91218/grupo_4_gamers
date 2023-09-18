@@ -31,9 +31,9 @@
                             $<%= product.price %>
                         </span>
                         <br>
-                        <span class="product-description">
+                        <section class="product-description">
                             <%= product.description %>
-                        </span>
+                        </section>
                         <br>
 
                         <div class="buttons-container">
@@ -41,8 +41,10 @@
                                 <button id="buy-button">Comprar</button>
                             </div>
                             <div class="admin-buttons">
-                                <button id="edit-button">Editar Producto</button>
-                                <button id="delete-button">Eliminar Producto</button>
+                                <button id="edit-button"><a id="edit-a-button" href="/tienda/edit/<%= product.id %>/">Editar Producto</a></button>
+                                <form action="/tienda/delete/<%= product.id %>/" method="POST">
+                                    <button id="delete-button">Eliminar Producto</button>
+                                </form>
                             </div>
                         </div>
                     </article>

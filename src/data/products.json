@@ -1,74 +1,74 @@
 [
-    {
-        "id": 0,
-        "name": "Monitor LG Ultragear",
-        "preview": "Monitor Full-HD, 1920 x 1080, tecnología de panel VA",
-        "description": "LG busca entender a los usuarios para ofrecerles óptimas soluciones y nuevas experiencias a través de la evolución tecnológica. Disfrutá de la perfecta combinación de diseño, calidad y rendimiento que la empresa te ofrece en este monitor. Un monitor a tu medida Gracias a su pantalla LCD vas a obtener gráficas con gran nitidez, colores vivos y atractivos.",
-        "image": "LG 27GQ50F-B monitor gaming ultragear 17.jpg",
-        "price": 299.99,
-        "category": "tienda"
-    },
-    {
-        "id": 1,
-        "name": "Samsung Odyssey G7",
-        "preview": "Alta resolución, curvo, panel IPS",
-        "description": "Frecuencia de actualización de 144 Hz, tiempo de respuesta de 1 ms que permite que la acción de ritmo rápido fluya con precisión del mundo realJugabilidad fluida y sin esfuerzo con AMD FreeSync Premium El diseño sin bordes de 3 lados proporciona el máximo espacio para un juego más grande y audaz. La tecnología Eye Comfort mantiene los ojos relajados y cómodos.",
-        "image": "Samsung Odyssey G7.jpg",
-        "price": 499.99,
-        "category": "tienda"
-    },
-    {
-        "id": 2,
-        "name": "Samsung Odyssey Ark",
-        "preview": "Curvo, 4K, con tecnologia de alta gama",
-        "description": "Samsung está fielmente comprometida en brindar productos de calidad y que contribuyan a crear un mejor futuro para las personas. Es por ello que con este monitor tendrás y disfrutarás de una gran experiencia visual en todo momento. Una experiencia visual de calidad, su resolución de 3840 x 2160 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad.",
-        "image": "Samsung-Odyssey-Ark-Monitor-Gamer-Oficial.webp",
-        "price": 699.99,
-        "category": "tienda"
-    },
-    {
-        "id": 3,
-        "name": "Gabinete Lancool",
-        "preview": "Perfecto para gama media, soporta placas ATX",
-        "description": "Gabinete Lancool con lateral de vidrio templado ultra transparente que permite visualizar y disfrutar del interior de tu equipo con una experiencia maravillosa. Viene equipado con 3 Coolers luminosos RGB programables con multiples efectos que mantendrán a tu equipo refrigerado, posibilitando a todos sus componentes trabajar al máximo de su velocidad.",
-        "image": "Lian Li Lancool 215X RGB (2 Coolers ARGB (200mm) + 1 Cooler).webp",
-        "price": 199.99,
-        "category": "tienda"
-    },
-    {
-        "id": 4,
-        "name": "Mouse Redragon M908",
-        "preview": "12400 DPI, 18 botones, ideal para juegos MOBA ",
-        "description": "El Impact es un mouse diseñado para obtener los mejores resultados en juegos MOBA y MMORPG, con su forma ergonómica te asegura la comodidad que necesitas en partidas prolongadas y 18 botones completamente configurables. Comodidad para horas y horas de juego continuas es lo que les espera.",
-        "image": "Mouse Gamer Redragon M908 Impact.jpg",
-        "price": 259.99,
-        "category": "tienda"
-    },
-    {
-        "id": 5,
-        "name": "Mouse Redragon Vampire",
-        "preview": "Óptico, hasta 10000 DPi, ideal para juegos shooter",
-        "description": "El mouse Gamer Redragon M720 Vampire RGB tiene un agarre cómodo y ergonómico con 8 botones programables. Posee retroiluminación RGB y botones programables: 16.8 millones de opciones de color de LED RGB (la retroiluminación LED se puede desactivar). Cuenta con 5 niveles de e DPI ajustables integrados (500/1000/2000/3000/5000) que satisfacen sus múltiples necesidades.",
-        "image": "Mouse Gamer Redragon Vampire RGB 8 Botões 10000 DPI.webp",
-        "price": 599.99,
-        "category": "tienda"
-    },
-    {
-        "id": 6,
-        "name": "Gabinete Thermaltake T200",
-        "preview": "Soporte ATX y micro-ATX, perfecto para dispositivos gama alta",
-        "description": "El Thermaltake AH T200 Snow es un micro chasis de marco abierto estilo helicóptero que viene con dos paneles de vidrio templado de 4 mm en los lados izquierdo y derecho y puede soportar placas base hasta Micro ATX.",
-        "image": "thermaltake-ah-t200.jpg",
-        "price": 699.99,
-        "category": "tienda"
-    },
-    {
-        "id": 7,
-        "name": "Gabinete 460X",
-        "preview": "Soporte ATX, excelente eleccion para dispositivos de gama alta",
-        "description": "El diseño de la semitorre Crystal 460X es maravillosamente sencillo y ha sido pensado para ofrecer el máximo rendimiento. Es un chasis compacto, ampliable e impresionante, con atractivo cristal templado de dos paneles, tecnología de refrigeración Direct Airflow y ventiladores LED P120 RGB.",
-        "image": "Gabinete Corsair 460X Mid-Tower Blanco RGB.jpg",
-        "price": 799.99,
-        "category": "tienda"
-    }
+ {
+  "id": 0,
+  "name": "Monitor LG Ultragear",
+  "preview": "Monitor Full-HD, 1920 x 1080, tecnología de panel VA",
+  "description": "LG busca entender a los usuarios para ofrecerles óptimas soluciones y nuevas experiencias a través de la evolución tecnológica. Disfrutá de la perfecta combinación de diseño, calidad y rendimiento que la empresa te ofrece en este monitor. Un monitor a tu medida Gracias a su pantalla LCD vas a obtener gráficas con gran nitidez, colores vivos y atractivos.",
+  "image": "LG 27GQ50F-B monitor gaming ultragear 17.jpg",
+  "price": 299.99,
+  "category": "tienda"
+ },
+ {
+  "id": 1,
+  "name": "Samsung Odyssey G7",
+  "preview": "Alta resolución, curvo, panel IPS",
+  "description": "Frecuencia de actualización de 144 Hz, tiempo de respuesta de 1 ms que permite que la acción de ritmo rápido fluya con precisión del mundo realJugabilidad fluida y sin esfuerzo con AMD FreeSync Premium El diseño sin bordes de 3 lados proporciona el máximo espacio para un juego más grande y audaz. La tecnología Eye Comfort mantiene los ojos relajados y cómodos.",
+  "image": "Samsung Odyssey G7.jpg",
+  "price": 499.99,
+  "category": "tienda"
+ },
+ {
+  "id": 2,
+  "name": "Samsung Odyssey Ark",
+  "preview": "Curvo, 4K, con tecnologia de alta gama",
+  "description": "Samsung está fielmente comprometida en brindar productos de calidad y que contribuyan a crear un mejor futuro para las personas. Es por ello que con este monitor tendrás y disfrutarás de una gran experiencia visual en todo momento. Una experiencia visual de calidad, su resolución de 3840 x 2160 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad.",
+  "image": "Samsung-Odyssey-Ark-Monitor-Gamer-Oficial.webp",
+  "price": 699.99,
+  "category": "tienda"
+ },
+ {
+  "id": 3,
+  "name": "Gabinete Lancool",
+  "preview": "Perfecto para gama media, soporta placas ATX",
+  "description": "Gabinete Lancool con lateral de vidrio templado ultra transparente que permite visualizar y disfrutar del interior de tu equipo con una experiencia maravillosa. Viene equipado con 3 Coolers luminosos RGB programables con multiples efectos que mantendrán a tu equipo refrigerado, posibilitando a todos sus componentes trabajar al máximo de su velocidad.",
+  "image": "Lian Li Lancool 215X RGB (2 Coolers ARGB (200mm) + 1 Cooler).webp",
+  "price": 199.99,
+  "category": "tienda"
+ },
+ {
+  "id": 4,
+  "name": "Mouse Redragon M908",
+  "preview": "12400 DPI, 18 botones, ideal para juegos MOBA ",
+  "description": "El Impact es un mouse diseñado para obtener los mejores resultados en juegos MOBA y MMORPG, con su forma ergonómica te asegura la comodidad que necesitas en partidas prolongadas y 18 botones completamente configurables. Comodidad para horas y horas de juego continuas es lo que les espera.",
+  "image": "Mouse Gamer Redragon M908 Impact.jpg",
+  "price": 259.99,
+  "category": "tienda"
+ },
+ {
+  "id": 5,
+  "name": "Mouse Redragon Vampire",
+  "preview": "Óptico, hasta 10000 DPi, ideal para juegos shooter",
+  "description": "El mouse Gamer Redragon M720 Vampire RGB tiene un agarre cómodo y ergonómico con 8 botones programables. Posee retroiluminación RGB y botones programables: 16.8 millones de opciones de color de LED RGB (la retroiluminación LED se puede desactivar). Cuenta con 5 niveles de e DPI ajustables integrados (500/1000/2000/3000/5000) que satisfacen sus múltiples necesidades.",
+  "image": "Mouse Gamer Redragon Vampire RGB 8 Botões 10000 DPI.webp",
+  "price": 599.99,
+  "category": "tienda"
+ },
+ {
+  "id": 6,
+  "name": "Gabinete Thermaltake T200",
+  "preview": "Soporte ATX y micro-ATX, perfecto para dispositivos gama alta",
+  "description": "El Thermaltake AH T200 Snow es un micro chasis de marco abierto estilo helicóptero que viene con dos paneles de vidrio templado de 4 mm en los lados izquierdo y derecho y puede soportar placas base hasta Micro ATX.",
+  "image": "thermaltake-ah-t200.jpg",
+  "price": 699.99,
+  "category": "tienda"
+ },
+ {
+  "id": 7,
+  "name": "Gabinete 460X",
+  "preview": "Soporte ATX, excelente eleccion para dispositivos de gama alta",
+  "description": "El diseño de la semitorre Crystal 460X es maravillosamente sencillo y ha sido pensado para ofrecer el máximo rendimiento. Es un chasis compacto, ampliable e impresionante, con atractivo cristal templado de dos paneles, tecnología de refrigeración Direct Airflow y ventiladores LED P120 RGB.",
+  "image": "Gabinete Corsair 460X Mid-Tower Blanco RGB.jpg",
+  "price": 799.99,
+  "category": "tienda"
+ }
 ]
