@@ -25,8 +25,18 @@
                         <div id="no-acc"><span class="no-acc-reg">¿No tenés una cuenta? <a href="/register"
                                     class="no-acc-reg"><strong>Registrate</strong></a></span></div>
                         <div id="inputs-container">
-                            <input type="text" name="usuario" id="usuario" class="input" placeholder="Usuario">
+                            <input type="email" name="email" id="email" class="input" placeholder="Correo">
+                           <% if (locals.errors && errors.email) { %>
+                            <div id="email_error">
+                                <%= errors.email.msg %>
+                            </div>
+                           <% } %>
                             <input type="password" name="password" id="password" class="input" placeholder="Contraseña">
+                            <% if (locals.errors && errors.password) { %>
+                                <div id="pass_error">
+                                    <%= errors.password.msg %>
+                                </div>
+                               <% } %>
                         </div>
                         <div id="submit-box">
                             <button type="submit" id="submit">

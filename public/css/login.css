@@ -72,6 +72,21 @@ label{
     margin: 10px;
     padding: 10px;
     margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#email_error{
+    color: red;
+    position: absolute;
+    top: 160px;
+    left: 42px;
+}
+
+#pass_error{
+    color: red;
+    position: absolute;
+    top: 160px;
+    left: 42px;
 }
 
 /*----------------boton iniciar sesion----------------------*/

@@ -1,9 +1,18 @@
 const express = require("express");
+const session = require("express-session");
 let app = express();
 
 const mainRouter = require('./routes/mainRouter.js');
 const productsRouter = require('./routes/productsRouter.js');
+const usersRouter = require('./routes/usersRouter.js');
 const methodOverride = require('method-override'); // Para poder usar los métodos PUT y DELETE
+
+
+app.use(session({
+    secret: 'Secret...',
+    resave: false,
+    saveUninitialized: false,
+}));
 
 app.use(express.static("public"))
 app.use(express.urlencoded({ extended: false })); // Para poder interpretar lo que llega desde el body
@@ -15,6 +24,7 @@ app.set('views', './src/views')
 
 app.use(mainRouter);
 app.use('/tienda',productsRouter);
+app.use('/', usersRouter)
 
 app.listen("3000", () => console.log("Servidor corriendo"));
 

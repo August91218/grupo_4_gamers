@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/29653ac336.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Perfil</title>
+</head>
+<body>
+    <%- include('./partials/header')%>
+    <main>
+        <section class="profile">
+            <h1 id="title">Hola "<%= user.fullName %>"</h1>
+            <div class="container">
+                <div>
+                    <img src="/images/default-image.png" alt="Foto de perfil" class="profile__picture">
+                </div>
+                <div class="container-2">
+                    <h2 class="profile__name">Nombre del Usuario</h2>
+                    <p class="profile__email">Correo electronico@example.com</p>
+                    <p class="profile__role">Rol: Administrador</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('./partials/footer')%>
+</body>
+</html>

@@ -43,8 +43,8 @@
                     <label for="description" class="form-label" >Descipción:</label>
                     <textarea name="description" id="description" placeholder="Descripcion completa del producto" class="form-input"><%= productToEdit.description %></textarea>
 
-                    <label for="product-image" class="form-label"></label>
-                    <input type="file" name="product-image" id="product-image">
+                    <label for="product-image" class="form-label">Imagen:</label>
+                    <input type="file" name="product-image" id="product-image" class="custom-file-input">
 
                     <button type="submit" class="edit-button">Editar producto <%= productToEdit.id %></button>
                 </div>

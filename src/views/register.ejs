@@ -23,16 +23,32 @@
             <article>
             <div class="register-box">
                 <h1 id="register-title">Registrate</h1>
-                <form action="#" method="post" id="register-form">
+                <form action="/register" method="POST" id="register-form" enctype="multipart/form-data">
                     <div id="no-acc"><span class="no-acc-reg">¿Ya tenés una cuenta? <a href="/login" class="no-acc-reg"><strong>Inicia Sesion</strong></a></span></div>
                     <div id="inputs-container">
-                        <input type="text" name="name" id="usuario" class="input" placeholder="Nombre y Apellido">
-                        <input type="email" name="emial" id="email" class="input" placeholder="Correo Electrónico">
+                        <input type="text" name="fullName" id="usuario" class="input" placeholder="Nombre y Apellido" value="<%= locals.oldData ? oldData.fullName : null %>">
+                        <% if (locals.errors && errors.fullName) { %>
+                            <div class="error-fullName"><%= errors.fullName.msg %> </div>
+                        <% } %>
+                        <input type="email" name="email" id="email" class="input" placeholder="Correo Electrónico" value="<%= locals.oldData ? oldData.email : null %>">
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="error-email"><%= errors.email.msg %> </div>
+                        <% } %>
                     </div>
                     <div id="inputs-container-2">
-                        <input type="password" name="password" id="domicilio" class="input" placeholder="Domicilio">
-                        <input type="password" name="password-repeat" id="password" class="input" placeholder="Contraseña">
+                        <input type="password" name="password" id="domicilio" class="input" placeholder="Contraseña" value="<%= locals.oldData ? oldData.password : null %>">
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="error-pass"><%= errors.password.msg %> </div>
+                        <% } %>
+                        <input type="password" name="passwordRepeat" id="password" class="input" placeholder="Repetir Contraseña" value="<%= locals.oldData ? oldData.passwordRepeat : null %>">
+                        <% if (locals.errors && errors.passwordRepeat) { %>
+                            <div class="error-reppass"><%= errors.passwordRepeat.msg %> </div>
+                        <% } %>
                     </div>
+                    <input type="file" id="avatar" name="avatar">
+                    <% if (locals.errors && errors.avatar) { %>
+                        <div class="error-reppass"><%= errors.avatar.msg %> </div>
+                    <% } %>
                     <div id="submit-box">
                         <button type="submit" id="submit">
                             <span>Registrarse</span>

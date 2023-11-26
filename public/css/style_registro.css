@@ -8,8 +8,6 @@ body{
     margin: 0;
 }
 
-
-
 /*--------------------Register Form */
 article{
     display: flex;
@@ -68,6 +66,7 @@ label{
     margin: 10px;
     padding: 10px;
     margin-top: 70px;
+    margin-bottom: 30px;
 }
 #inputs-container-2{
     display: flex;
@@ -79,6 +78,39 @@ label{
     padding: 10px;
 }
 
+#avatar{
+    display: flex;
+    justify-content: left;
+    width: 97%;
+    padding: 15px;
+}
+
+
+/*-------------errores-------------------*/
+.error-fullName{
+    color: red;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+}
+.error-email{
+    color: red;
+    position: absolute;
+    top: 140px;
+    right: 65px;
+}
+.error-pass{
+    color: red;
+    position: absolute;
+    bottom: 155px;
+    left: 40px;
+}
+.error-reppass{
+    color: red;
+    position: absolute;
+    bottom: 155px;
+    right: 80px;
+}
 
 /*----------------boton registrarse----------------------*/
 

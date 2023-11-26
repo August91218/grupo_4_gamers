@@ -23,8 +23,8 @@
   "preview": "Curvo, 4K, con tecnologia de alta gama",
   "description": "Samsung está fielmente comprometida en brindar productos de calidad y que contribuyan a crear un mejor futuro para las personas. Es por ello que con este monitor tendrás y disfrutarás de una gran experiencia visual en todo momento. Una experiencia visual de calidad, su resolución de 3840 x 2160 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad.",
   "image": "Samsung-Odyssey-Ark-Monitor-Gamer-Oficial.webp",
-  "price": 699.99,
-  "category": "tienda"
+  "price": 699,
+  "category": ""
  },
  {
   "id": 3,
@@ -59,8 +59,8 @@
   "preview": "Soporte ATX y micro-ATX, perfecto para dispositivos gama alta",
   "description": "El Thermaltake AH T200 Snow es un micro chasis de marco abierto estilo helicóptero que viene con dos paneles de vidrio templado de 4 mm en los lados izquierdo y derecho y puede soportar placas base hasta Micro ATX.",
   "image": "thermaltake-ah-t200.jpg",
-  "price": 699.99,
-  "category": "tienda"
+  "price": 699,
+  "category": ""
  },
  {
   "id": 7,
@@ -68,7 +68,7 @@
   "preview": "Soporte ATX, excelente eleccion para dispositivos de gama alta",
   "description": "El diseño de la semitorre Crystal 460X es maravillosamente sencillo y ha sido pensado para ofrecer el máximo rendimiento. Es un chasis compacto, ampliable e impresionante, con atractivo cristal templado de dos paneles, tecnología de refrigeración Direct Airflow y ventiladores LED P120 RGB.",
   "image": "Gabinete Corsair 460X Mid-Tower Blanco RGB.jpg",
-  "price": 799.99,
-  "category": "tienda"
+  "price": 799,
+  "category": ""
  }
 ]
