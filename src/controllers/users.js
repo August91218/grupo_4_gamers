@@ -39,7 +39,6 @@ const controller = {
         return res.redirect('/login')
     },
     login: (req, res) => {
-        console.log(req.session);
         return res.render('login');
     },
     postLogin: (req, res) => {
@@ -64,13 +63,16 @@ const controller = {
             errors: {
                 email: {
                     msg: 'Usuario no encontrado!'
-                    //min 1:10:41 videoooo
                 }
             }
         });
     },
     profile: (req, res) => {
         return res.render('profile', {user: req.session.userLogged})
+    },
+    logout: (req,res) => {
+        req.session.destroy();
+        return res.redirect('/');
     }
 }
 
