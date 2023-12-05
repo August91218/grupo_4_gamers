@@ -1,6 +1,0 @@
-CREATE DATABASE IF NOT EXISTS grupo4;
-USE grupo4;
-
-CREATE TABLE order (
-    
-)

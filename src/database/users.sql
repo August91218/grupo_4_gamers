@@ -38,7 +38,6 @@ CREATE TABLE `users` (
 --
 -- Índices para tablas volcadas
 --
-
 --
 -- Indices de la tabla `users`
 --
@@ -46,6 +45,26 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`);
 COMMIT;
+
+--
+-- Estructura de tabla para la tabla `order`
+--
+CREATE TABLE `order` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `id_user` smallint(5) NOT NULL,
+  `total` decimal(10,2) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp(),
+  -- Otros campos relacionados con la orden
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`id_user`) REFERENCES `users`(`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Índices de la tabla `order`
+--
+ALTER TABLE `order`
+  ADD INDEX `id_user` (`id_user`);
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
