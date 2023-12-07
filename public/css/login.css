@@ -1,0 +1,156 @@
+@import url(header.css);
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: rgba(214, 212, 212, 0.938);
+}
+
+/*-----------------botones de navegacion-----------------*/
+
+
+/*-------------------Formulario de Login-----------------------*/
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#no-acc{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+    top: 36px;
+}
+.no-acc-reg{
+    text-decoration: none;
+    color: rgb(32, 148, 243);
+}
+.login-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 45rem;
+    border-radius: 10px;
+}
+#login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#login-title{
+    position: absolute;
+    top: 15px;
+    left: 43px;
+}
+label{
+    margin: 4px;
+}
+.input{
+    border-radius: 3px;
+    border: solid 2px rgb(163, 157, 157);
+    background-color: rgb(235, 231, 231);
+    width: 300px;
+    height: 25px;
+}
+#inputs-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#email_error{
+    color: red;
+    position: absolute;
+    top: 160px;
+    left: 42px;
+}
+
+#pass_error{
+    color: red;
+    position: absolute;
+    top: 160px;
+    left: 42px;
+}
+
+/*----------------boton iniciar sesion----------------------*/
+
+#submit-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+#submit{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    width: 260px;
+    height: 40px;
+    color: white;
+    background-color: royalblue;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+#submit:hover{
+    background-color: rgb(21, 55, 158);
+    transition: 0.65s;
+    cursor: pointer;
+}
+#forgotten-pass{
+    text-decoration: none;
+    color: rgb(32, 147, 255);
+    padding-left: 20px;
+}
+
+#forgotten-pass:hover{
+    color: rgb(21, 55, 158);
+    transition: 0.65s;
+    cursor: pointer;
+}
+
+.fa-arrow-right{
+    position: relative;
+    left: 135px;
+}
+/*ICono personita*/
+
+.fa-user{
+    color: #7a7a7a;
+    scale: 200%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+#bienvenida{
+    display: flex;
+    color: #7a7a7a;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+#b-div{
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,125 @@
+@import url(header.css);
+@import url(footer.css);
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: rgba(214, 212, 212, 0.938);
+    margin: 0;
+    color: rgb(236, 236, 236);
+}
+
+/*--------------------Div del products detail-------------*/
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    width: 1000px;
+    margin: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.product-preview{
+    border-right: solid 2px gainsboro;
+    padding-right: 8px;
+    margin: 20px 0px;
+}
+.product-info{
+    display: flex;
+    flex-direction: column;    
+}
+
+#product-name{
+    color: black;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+#image-container{
+    width: 320px;
+    height: 340px;
+    position: relative;
+    right: 15px;
+}
+
+#product-image{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 45px;
+}
+.product-description{
+    width: 500px;
+    color: rgb(134, 134, 134);
+}
+.product-price{
+    color: rgb(66, 133, 0);
+}
+
+/*----------------Estilizaciones de botones de comprar, editar y eliminar----------------*/
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buy-button{
+    border: none;
+    height: 40px;
+    width: 500px;
+    cursor: pointer;
+    background-color: rgb(7, 135, 255);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+#edit-a-button{
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.admin-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 20px;
+}
+#edit-button{
+    border: none;
+    height: 40px;
+    width: 240px;
+    cursor: pointer;
+    background-color: rgb(255, 189, 7);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#delete-button{
+    border: none;
+    height: 40px;
+    width: 240px;
+    cursor: pointer;
+    background-color: rgb(255, 7, 7);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+}

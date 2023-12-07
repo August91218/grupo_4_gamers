@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/29653ac336.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/tienda.css" class="css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Tienda</title>
+</head>
+
+<body>
+    <%- include('./partials/header')%>
+        <nav id="header">
+            <h2 class="tienda_h2">Tienda</h2>
+        </nav>
+        <main>
+            <div id="contenedor" class="contenedor">
+                <% products.forEach(products=> { %>
+                    <div>
+                        <a href="/tienda/detail/<%= products.id %>/" id="detail-a">
+                            <img src="./images/<%= products.image %>" alt="Producto" id="imagen">
+                            <div class="informacion">
+                                <p>
+                                    <%= products.name %>
+                                </p>
+                                <p class="precio">
+                                    $<%= products.price %>
+                                </p>
+                                <span class="desc">
+                                    <%= products.preview %>
+                                </span>
+                                <button></button><!-- onclick="agregarAlCarrito('Producto 1', 199.99)" -->
+                            </div>
+                        </a>
+                    </div>
+                    <% }) %>
+            </div>
+            <script>
+                function agregarAlCarrito(nombre, precio) {
+                    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                    carrito.push({ nombre, precio });
+                    localStorage.setItem('carrito', JSON.stringify(carrito));
+                    alert(`${nombre} agregado al carrito. Precio: $${precio}`);
+                }
+            </script>
+            <script src="/app.js"></script>
+            <script>
+                function alClicar() {
+                    window.location.href = "/tienda/detail";
+                }
+            </script>
+            <%- include('./partials/footer')%>
+        </main>
+</body>
+
+</html>

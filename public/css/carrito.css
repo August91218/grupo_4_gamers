@@ -1,0 +1,222 @@
+@import url(footer.css);
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(214, 212, 212, 0.938);
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(140, 140, 140);
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(71, 2, 71);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+nav a{
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+
+
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(247, 247, 247);
+}
+h2{
+    font-family:"Montserrat",sans-serif;
+    text-align:justify;
+    margin: 30px,0px;
+}
+.nombre {
+    color: #aa1c87d7;
+    font-weight: 1900;
+}
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 15px;
+    margin-top: 11px;
+    background-color: #6b0752d7;
+    color: #f6f6f6;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+main{
+    padding: 25px 25px 25px 25px;
+    margin: 25px;
+}
+main{
+    border-style: solid;
+    border: 30px 10px 28px 14px;
+    border-radius: 15px;
+    border-color: rgb(71, 2, 71);
+    border-width: 5px;
+}
+
+button:hover {
+    background-color: #8e0b83;
+}
+button.active{
+    color: #b822ee;
+}
+main {
+    display: block;
+    margin-bottom: 340px;
+}
+
+
+.main-header{
+background-color: grey;
+padding: 20px;
+
+
+}
+.logo{
+    width: 25vw;
+    
+}
+.main-destacados{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    }
+    .publicidad{
+        width: 80vw;
+    }
+    
+.hamburguer-button{
+    background-color: #4685E3;
+    color: black;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+.main-navbar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.main-navbar a { 
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px;
+}
+.copy-main-section-productos{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.main-section-producto{
+    display: block;
+}
+.main-conteiner-productos{
+    display: inline-block;
+    }
+.productos{
+    width: 75vw ;
+}
+.container-producto{
+    padding: 10px;
+    }
+    
+    @media (min-width:576px){
+.oculto{
+    display: flex;
+}
+}
+@media (min-width:768px){
+.hamburguer-button{
+    display: none;
+}    
+.main-header-top-navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+.copy-header{
+    font-size: 25px;
+    text-align: left;
+}
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.main-navbar ul{
+    display: flex;
+}
+.main-navbvar{
+    margin: 0 5px;
+}
+}
+@media (min-width:992px){
+
+}
+@media (min-width:1200px){
+    .logo{
+        width: 150px;
+    }
+    .main-header-top-navbar, .main-navbar{
+        border: #4685E3 5px solid;
+        max-width: 1200px;
+        margin: auto;
+
+    }
+    .main-header-top-navbar{
+        align-items: center;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .main-navbar li {
+    margin: 0 5px;
+    }
+    .main-navbar a{
+        font-size: 18px;
+    }
+
+}
+.email{
+    background-color: #f6f6f6;
+    color: #141c29;
+}
+h3{
+    color: #faaf00;
+}
+h4{
+    color: #faaf00;
+}

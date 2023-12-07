@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/carrito.css" class="css">
+    <script src="https://kit.fontawesome.com/29653ac336.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/header.css" class="css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Carrito de Compras</title>
+</head>
+
+<body>
+    <%- include('./partials/header')%>
+        <main>
+            <h1>Carrito de compras</h1>
+
+            <div>
+                <h2>Productos en el carrito</h2>
+                <ul id="carrito">
+                    <!-- Aquí se mostrarán los productos agregados al carrito -->
+                </ul>
+                <p>Total: $<span id="total">0</span></p>
+                <button class="Vaciarc" onclick="vaciarCarrito()">Vaciar carrito</button>
+                <button class="Comprarc" onclick="realizarCompra()">Comprar</button>
+            </div>
+        </main>
+        <%- include('./partials/footer') %>
+            <script src="/app.js"></script>
+            <script>
+                function mostrarProductosEnCarrito() {
+                    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                    let total = 0;
+                    const carritoElement = document.getElementById('carrito');
+                    carritoElement.innerHTML = '';
+                    carrito.forEach(item => {
+                        const li = document.createElement('li');
+                        li.innerText = `${item.nombre} - Precio: $${item.precio}`;
+                        carritoElement.appendChild(li);
+                        total += item.precio;
+                    });
+                    const totalElement = document.getElementById('total');
+                    totalElement.innerText = total;
+                }
+
+                function vaciarCarrito() {
+                    localStorage.removeItem('carrito');
+                    mostrarProductosEnCarrito();
+                }
+
+                function realizarCompra() {
+                    // Aquí podrías implementar la lógica para enviar la información del carrito al servidor,
+                    // procesar el pago y generar una orden de compra.
+                    alert("¡Compra realizada! Gracias por tu compra.");
+                    vaciarCarrito();
+                }
+
+                mostrarProductosEnCarrito();
+            </script>
+</body>
+
+</html>

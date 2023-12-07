@@ -1,0 +1,29 @@
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 800px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.container-2{
+    margin: 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile__picture{
+    max-width: 225px;
+    max-height: 225px;
+}

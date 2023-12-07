@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "fullName": "Catina Bache",
+        "email": "cbache0@friendfeed.com",
+        "password": "gQ4*5GY@xO*X."
+    },
+    {
+        "id": 2,
+        "fullName": "asda",
+        "email": "asdaddsa@asd",
+        "password": "$2a$10$/z6LOrrzNO8ww1Y1lqsBM./YdHpUS8ZUHThGoWPOdPTUDhNiFP3Am",
+        "avatar": "1699501835803_img.png"
+    },
+    {
+        "id": 3,
+        "fullName": "asda",
+        "email": "asdaddsa@asda",
+        "password": "$2a$10$s.zLk8Mp5jPfg42hyCQ3a.rKEnc4o.OtZGx6SnMYc1Iqr1xN8K5Dm",
+        "avatar": "1699501883088_img.png"
+    },
+    {
+        "id": 4,
+        "fullName": "Augusto Sanchez",
+        "email": "augustoosanchezz@gmail.com",
+        "password": "$2a$10$5eitVQC7xNNkJ8pwVTULVOoU9rUXyNP6wi6mJ09FEQr2PsCTDS5ym",
+        "avatar": "1700528144280_img.png"
+    },
+    {
+        "id": 5,
+        "fullName": "aa",
+        "email": "aaa@aa",
+        "password": "$2a$10$iULGFX8i3P6O56ElqFAniekkLpIrCvaawJlao0qaAdBoZrEVQ9nLC",
+        "avatar": "1700531777392_img.png"
+    }
+]

@@ -1,0 +1,58 @@
+#logo{
+    width: 70px;
+    height: 70px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(71 2 71);
+}
+#morado{
+    background-color: rgb(59, 0, 59);
+    height: 30px;
+    width: 100vw;
+}
+.nav-link{
+    text-decoration: none;
+    color: darkgray;
+    padding: 10px;
+}
+.nav-link:hover{
+    color: rgb(188, 117, 255);
+}
+
+.minor-section{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+.minor-section:hover{
+    color: rgb(188, 117, 255);
+}
+
+/*-----------------Barra de navegacion-----------------------*/
+#busqueda-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#search-bar{
+    width: 550px;
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 7px;
+}
+
+#buscar{
+    height: 30px;
+    padding: 8px;
+    border: none;
+    margin: 5px;
+    border-radius: 7px;
+    background-color: rgb(231, 231, 228);
+    cursor: pointer;
+}

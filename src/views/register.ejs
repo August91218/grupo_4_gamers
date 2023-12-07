@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_registro.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('./partials/header')%>
+    <main>
+        <section>
+            <div id="b-div">
+                <i class="fas fa-user"></i> 
+                <span id="bienvenida">¡Te damos la bienvenida!</span>
+            </div>
+            <article>
+            <div class="register-box">
+                <h1 id="register-title">Registrate</h1>
+                <form action="/register" method="POST" id="register-form" enctype="multipart/form-data">
+                    <div id="no-acc"><span class="no-acc-reg">¿Ya tenés una cuenta? <a href="/login" class="no-acc-reg"><strong>Inicia Sesion</strong></a></span></div>
+                    <div id="inputs-container">
+                        <input type="text" name="fullName" id="usuario" class="input" placeholder="Nombre y Apellido" value="<%= locals.oldData ? oldData.fullName : null %>">
+                        <% if (locals.errors && errors.fullName) { %>
+                            <div class="error-fullName"><%= errors.fullName.msg %> </div>
+                        <% } %>
+                        <input type="email" name="email" id="email" class="input" placeholder="Correo Electrónico" value="<%= locals.oldData ? oldData.email : null %>">
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="error-email"><%= errors.email.msg %> </div>
+                        <% } %>
+                    </div>
+                    <div id="inputs-container-2">
+                        <input type="password" name="password" id="domicilio" class="input" placeholder="Contraseña" value="<%= locals.oldData ? oldData.password : null %>">
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="error-pass"><%= errors.password.msg %> </div>
+                        <% } %>
+                        <input type="password" name="passwordRepeat" id="password" class="input" placeholder="Repetir Contraseña" value="<%= locals.oldData ? oldData.passwordRepeat : null %>">
+                        <% if (locals.errors && errors.passwordRepeat) { %>
+                            <div class="error-reppass"><%= errors.passwordRepeat.msg %> </div>
+                        <% } %>
+                    </div>
+                    <input type="file" id="avatar" name="avatar">
+                    <% if (locals.errors && errors.avatar) { %>
+                        <div class="error-reppass"><%= errors.avatar.msg %> </div>
+                    <% } %>
+                    <div id="submit-box">
+                        <button type="submit" id="submit">
+                            <span>Registrarse</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

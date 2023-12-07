@@ -1,0 +1,131 @@
+@import url(footer.css);
+@import url(header.css);
+.tienda_h2{
+    color: #7a7a7a;
+}
+body{
+    font-family: "Space Grotesk", sans-serif;
+    background-color: rgba(214, 212, 212, 0.938);
+    margin: 0;
+    color: rgb(236, 236, 236);
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h2{
+    font-family:"Montserrat",sans-serif;
+    text-align: center;
+    margin: 30px,0px;
+}
+img{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+}
+.carrito{
+    filter: invert(100%);
+    width: 50px;
+    height: auto;
+    display: flex; 
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0,0, 0,0);
+    background-color: #7a7a7a;
+    border-radius: 20px;
+    margin: 25px;
+}
+.contenedor>div:hover {
+    background-color:rgb(9, 4, 41);
+    scale: 110%;
+    display: block;
+    transition: 0.16s ease-out;
+    cursor: pointer;
+}
+
+.contenedor>div:hover .desc{
+    transition: 0.26s ;
+    scale: 110%;
+    display: flex;
+    
+}
+.desc{
+    display: none;
+    margin: 18px;
+    color: rgb(175, 175, 175);
+    justify-content: space-evenly;
+    max-width: 250px;
+    align-items: center;
+}
+
+#detail-a{
+    text-decoration: none;
+    color: white;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15;
+}
+.informacion>p:first-child{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio{
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: #3f3c3c;
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #2c456c;
+}
+.scroll{
+    background-color: aliceblue;
+    box-shadow: .1rem .2rem .3rem #333;
+}
+.scroll img{
+    filter: invert(15%);
+}
+.scroll h2{
+    color: #141c29  ;
+}
+.nombre {
+    color: #aa1c87d7;
+    font-weight: 1900;
+}
