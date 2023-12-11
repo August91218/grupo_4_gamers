@@ -21,12 +21,13 @@
             <h1 id="title">Hola "<%= user.fullName %>"</h1>
             <div class="container">
                 <div>
-                    <img src="/images/default-image.png" alt="Foto de perfil" class="profile__picture">
+                    <img src="/images/users/avatars/<%= locals.user.avatar %>" alt="Foto de perfil" class="profile__picture">
                 </div>
                 <div class="container-2">
-                    <h2 class="profile__name">Nombre del Usuario</h2>
-                    <p class="profile__email">Correo electronico@example.com</p>
-                    <p class="profile__role">Rol: Administrador</p>
+                    <h2 class="profile__name">Nombre:</h2>
+                    <p class="profile__email"><%= user.fullName %></p>
+                    <h2 class="profile__name">Correo Electrónico:</h2>
+                    <p class="profile__role"><%= user.email %></p>
                 </div>
             </div>
         </section>

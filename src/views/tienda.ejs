@@ -22,34 +22,26 @@
         </nav>
         <main>
             <div id="contenedor" class="contenedor">
-                <% products.forEach(products=> { %>
+                <% for( let i=0; i < productos.length; i++ ) {%>
                     <div>
-                        <a href="/tienda/detail/<%= products.id %>/" id="detail-a">
-                            <img src="./images/<%= products.image %>" alt="Producto" id="imagen">
+                        <a href="/tienda/detail/<%= productos[i].id %>/" id="detail-a">
+                            <img src="./images/<%= productos[i].image %>" alt="Producto" id="imagen">
                             <div class="informacion">
-                                <p>
-                                    <%= products.name %>
+                                <p class="nombre_producto">
+                                    <%= productos[i].name %>
                                 </p>
                                 <p class="precio">
-                                    $<%= products.price %>
+                                    $<%= productos[i].price %>
                                 </p>
                                 <span class="desc">
-                                    <%= products.preview %>
+                                    <%= productos[i].preview %>
                                 </span>
-                                <button></button><!-- onclick="agregarAlCarrito('Producto 1', 199.99)" -->
+                                <button></button>
                             </div>
                         </a>
                     </div>
-                    <% }) %>
+                    <% } %>
             </div>
-            <script>
-                function agregarAlCarrito(nombre, precio) {
-                    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-                    carrito.push({ nombre, precio });
-                    localStorage.setItem('carrito', JSON.stringify(carrito));
-                    alert(`${nombre} agregado al carrito. Precio: $${precio}`);
-                }
-            </script>
             <script src="/app.js"></script>
             <script>
                 function alClicar() {

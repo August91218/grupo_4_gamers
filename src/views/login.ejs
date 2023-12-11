@@ -21,30 +21,39 @@
             <article>
                 <div class="login-box">
                     <h1 id="login-title">Iniciá Sesion</h1>
-                    <form action="#" method="post" id="login-form">
+                    <form action="/login" method="POST" id="login-form">
                         <div id="no-acc"><span class="no-acc-reg">¿No tenés una cuenta? <a href="/register"
                                     class="no-acc-reg"><strong>Registrate</strong></a></span></div>
                         <div id="inputs-container">
                             <input type="email" name="email" id="email" class="input" placeholder="Correo">
-                           <% if (locals.errors && errors.email) { %>
-                            <div id="email_error">
-                                <%= errors.email.msg %>
-                            </div>
-                           <% } %>
-                            <input type="password" name="password" id="password" class="input" placeholder="Contraseña">
-                            <% if (locals.errors && errors.password) { %>
-                                <div id="pass_error">
-                                    <%= errors.password.msg %>
+                            <% if (locals.errors && errors.email) { %>
+                                <div id="email_error">
+                                    <%= errors.email.msg %>
                                 </div>
-                               <% } %>
+                                <% } %>
+                                    <input type="password" name="password" id="password" class="input"
+                                        placeholder="Contraseña">
+                                    <% if (locals.errors && errors.password) { %>
+                                        <div id="pass_error">
+                                            <%= errors.password.msg %>
+                                        </div>
+                                        <% } %>
                         </div>
+                        <br>
+                        <div class="remember-me">
+                            <input type="checkbox" name="remeber_user"> <span>Recuerdame este usuario</span>
+                        </div>
+
                         <div id="submit-box">
                             <button type="submit" id="submit">
                                 <span>Iniciar Sesion</span>
                                 <i class="fas fa-arrow-right"></i>
                             </button>
+
                             <a href="/" id="forgotten-pass">Olvidé mi contraseña</a>
                         </div>
+                        <br>
+                        <script src="/js/create.js"></script>
                     </form>
                 </div>
             </article>

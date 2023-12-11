@@ -47,14 +47,16 @@ h2{
   	outline: 0; 
   	border: 0;
 	border-radius: 0;
-	background: #f0f0f0;
-	color: #7b7b7b;
-	color: #999;
+	background-color: #a7a7a7;
 	border:2px solid rgba(0,0,0,0.2);
     border-radius: 12px;
     position: relative;
     transition: all 0.25s ease;
     resize: none;
+}
+.form-input:focus{
+    border: 1px solid #7c7979;
+    background-color: #f0f0f0;
 }
 .buy-now-button{
     margin: 15px 0px;
@@ -64,4 +66,21 @@ h2{
     border-radius: 10px;
     background-color: rgb(28, 134, 255);
     cursor: pointer;
+}
+select {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #7c7979;
+    border-radius: 5px;
+    background-color: #a7a7a7;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    /* Transición para el objeto SELECT */
+}
+
+select:focus {
+    background-color: #f0f9ff;
+    border-color: #007bff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

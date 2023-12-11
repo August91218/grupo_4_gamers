@@ -1,22 +1,29 @@
 <header>
-        <a href="/"><img src="/images/logo.png" alt="logo de la compañia" id="logo"></a>
-        <form action="#" id="busqueda-container">
-            <input type="text" name="search-bar" id="search-bar" placeholder="Buscar productos, ofertas, promociones...">
-            <button type="submit" id="buscar">Buscar</button>
-        </form>
-        <nav>
-            <a href="/" class="nav-link">Inicio</a>
-            <a href="/tienda" class="nav-link">Tienda</a>
-            <a href="/carrito" class="nav-link">Carrito</a>
-            <% if (!locals.isLogged) { %>
-                <a href="/login" class="nav-link">Ingresar</a>
+    <a href="/"><img src="/images/logo.png" alt="logo de la compañia" id="logo"></a>
+    <form action="/tienda" method="POST" id="busqueda-container">
+        <input type="text" name="barra" id="search-bar" placeholder="Buscar productos, ofertas, promociones...">
+        <button type="submit" id="buscar">Buscar</button>
+    </form>
+    <nav>
+        <a href="/" class="nav-link">Inicio</a>
+        <a href="/tienda" class="nav-link">Tienda</a>
+        <a href="/carrito" class="nav-link">Carrito</a>
+        <% if (!locals.isLogged) { %>
+            <a href="/login" class="nav-link">Ingresar</a>
             <% } else { %>
-                <a href="/profile" class="nav-link"><i class="fas fa-user"></i></a>
-            <% } %>
-        </nav>
+                <div class="dropdown">
+                    <a href="#" class="nav-link"><i class="fa-regular fa-user"></i></a>
+                    <div class="dropdown-options">
+                        <a href="/profile" class="dropdown-option">Perfil</a>
+                        <a href="/logout" class="dropdown-option">Cerrar Sesión</a>
+                    </div>
+                </div>
+                <% } %>
+    </nav>
 </header>
 <div id="morado">
     <nav>
         <a href="/tienda/vender/" class="minor-section">Vender</a>
     </nav>
 </div>
+<script src="/js/searchProduct.js"></script>

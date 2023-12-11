@@ -1,53 +1,129 @@
-#logo{
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.dropdown:hover .dropdown-options {
+    display: flex;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    z-index: 5;
+}
+
+.dropdown-option {
+    display: inline-block;
+    padding: 10px;
+    transition: background-color 0.7s;
+   
+}
+.dropdown-option:hover {
+    background-color: rgb(63, 0, 165);
+    color: aliceblue;
+   }
+
+/*-------------------------------------------------------------------*/
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#logo {
     width: 70px;
     height: 70px;
 }
-header{
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(71 2 71);
 }
-#morado{
+
+#morado {
     background-color: rgb(59, 0, 59);
     height: 30px;
     width: 100vw;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     color: darkgray;
-    padding: 10px;
+    padding: 12px;
 }
-.nav-link:hover{
+
+.fa-user {
+    color: #7a7a7a;
+    scale: 200%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+#nav-items {
+    display: flex;
+}
+
+.nav-link:hover {
     color: rgb(188, 117, 255);
 }
 
-.minor-section{
+.minor-section {
     display: flex;
     justify-content: space-around;
     text-decoration: none;
     color: rgb(179, 179, 179);
 }
-.minor-section:hover{
+
+.minor-section:hover {
     color: rgb(188, 117, 255);
 }
 
 /*-----------------Barra de navegacion-----------------------*/
-#busqueda-container{
+#busqueda-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-#search-bar{
+
+#search-bar {
     width: 550px;
     padding: 5px;
     border: solid 1px white;
     border-radius: 7px;
 }
 
-#buscar{
+#buscar {
     height: 30px;
     padding: 8px;
     border: none;

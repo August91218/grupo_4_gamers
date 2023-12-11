@@ -56,7 +56,7 @@ router.get('/login',validation, controller.login);
 router.post('/login', controller.postLogin);
 /*----------------REGISTER----------------*/
 router.post('/register', uploadFile.single('avatar'), validaciones, controller.postRegister);
-router.get('/register', controller.register);
+router.get('/register',validation, controller.register);
 /*------------------PROFILE--------------------*/
 router.get('/profile',authValidation, controller.profile);
 /*------------------LOGOUT--------------------*/

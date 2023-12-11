@@ -1,5 +1,4 @@
 @import url(header.css);
-
 *{
     font-family: 'Quicksand', sans-serif;
 }
@@ -153,4 +152,11 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*remeber me*/
+.remember-me{
+    position: absolute;
+    bottom: 25px;
+    left: 43px;
+    color: rgb(21, 55, 158);
 }

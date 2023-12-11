@@ -24,7 +24,8 @@
                         </div>
                     </article>
                     <article class="product-info">
-                        <h2 id="product-name"><%= product.name %>
+                        <h2 id="product-name">
+                            <%= product.name %>
                         </h2>
                         <br>
                         <span class="product-price">
@@ -38,19 +39,25 @@
 
                         <div class="buttons-container">
                             <div>
-                                <button id="buy-button">Comprar</button>
+                                <button id="buy-button" class="boton-comprar">Comprar</button">
                             </div>
-                            <div class="admin-buttons">
-                                <button id="edit-button"><a id="edit-a-button" href="/tienda/edit/<%= product.id %>/">Editar Producto</a></button>
-                                <form action="/tienda/delete/<%= product.id %>/" method="POST">
-                                    <button id="delete-button">Eliminar Producto</button>
-                                </form>
-                            </div>
+                            <% if (locals.isLogged == true) { %>
+                                <div class="admin-buttons">
+                                    <button id="edit-button"><a id="edit-a-button"
+                                            href="/tienda/edit/<%= product.id %>/">Editar Producto</a></button>
+                                    <form action="/tienda/delete/<%= product.id %>/" method="POST">
+                                        <button id="delete-button">Eliminar Producto</button>
+                                    </form>
+                                </div>
+                            <% } %>
+
                         </div>
                     </article>
+
                 </div>
             </section>
         </main>
+        <script src="/js/carrito.js"></script>
         <%- include('./partials/footer') %>
 </body>
 

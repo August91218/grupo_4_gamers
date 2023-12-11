@@ -1,5 +1,7 @@
 const fs = require('fs');
 
+let db = require("../database/models");
+
 const User = {
     //crear el usuario a partir de su informacion
     fileName: './src/data/users.json',
