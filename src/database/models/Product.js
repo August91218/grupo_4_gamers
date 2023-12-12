@@ -23,10 +23,10 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER
         },
         category: {
-            type: dataTypes.INTEGER
+            type: dataTypes.STRING
         },
         discount: {
-            type: dataTypes.DECIMAL(6, 2)
+            type: dataTypes.INTEGER
         }
         
     };
